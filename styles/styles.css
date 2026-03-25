@@ -27,6 +27,8 @@ nav ul {
     gap: 2rem;
 }
 
+
+
 header {
     text-align: center;
     border-bottom: var(--accent-color) solid 0.5rem;
