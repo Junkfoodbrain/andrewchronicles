@@ -35,6 +35,14 @@ header {
     font-family: var(--font-family);
 }
 
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
+
 .hero {
     position: relative;
     width: 100%;
