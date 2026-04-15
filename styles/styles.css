@@ -21,7 +21,7 @@ a {
 
 nav ul {
     list-style: none;
-    text-decoration: none;
+    text-decoration: none;    
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -44,7 +44,7 @@ header {
 }
 
 .andrew {
-    width: 300px;
+    width: 350px;
     height: auto;
 }
 
