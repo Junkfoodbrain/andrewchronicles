@@ -52,8 +52,17 @@ header {
 .book {
     width: 400px;
     height: auto;
-
 }
+
+.call-to-action {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+
 .hero {
     position: relative;
     width: 100%;
