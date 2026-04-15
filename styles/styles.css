@@ -7,7 +7,7 @@
 
 nav {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 10px;    
 }
 
 a {
@@ -24,7 +24,7 @@ nav ul {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 
@@ -37,9 +37,9 @@ header {
 
 .logo {
     position: absolute;
-    top:35px;
-    left: 5px;
-    width: 120px;
+    top:20px;
+    left: 45px;
+    width: 130px;
     height: auto;
 }
 
