@@ -101,6 +101,7 @@ button {
 
 .construction {
     text-align: center;
+    font-style: italic;
     font-size: 2rem;
     font-weight: 600;
     border: black solid 0.5rem;
