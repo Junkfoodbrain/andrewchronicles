@@ -103,7 +103,9 @@ button {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
+    border: black solid 0.5rem;
 }
+
 
 h1 {
     font-size: 3rem;
