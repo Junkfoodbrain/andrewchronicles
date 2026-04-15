@@ -7,7 +7,7 @@
 
 nav {
     background-color: var(--primary-color);
-    padding: 10px;    
+    padding: 10px;
 }
 
 a {
@@ -39,7 +39,12 @@ header {
     position: absolute;
     top: 5px;
     left: 10px;
-    width: 100px;
+    width: 60px;
+    height: auto;
+}
+
+.andrew {
+    width: 120px;
     height: auto;
 }
 
@@ -57,7 +62,7 @@ header {
 }
 
 .hero-title {
-    position: absolute;    
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -67,7 +72,7 @@ header {
 }
 
 h1 {
-    font-size: 3rem;  
+    font-size: 3rem;
     text-shadow: black 0 0 2rem;
     font-family: var(--font-family);
 }
@@ -83,7 +88,7 @@ h3 {
     font-family: 'Imprint MT Shadow';
     font-size: 2rem;
     font-weight: 400;
-    color:var(--primary-color);
+    color: var(--primary-color);
 }
 
 p {
@@ -92,9 +97,9 @@ p {
 
 @media (max-width: 480px) {
     h1 {
-            font-size: clamp(1.6rem, 5vw, 3rem);
-            text-shadow: black 0 0 1rem;
-            line-height: 1.1;
-            padding: 0 0.5rem;
-        }
+        font-size: clamp(1.6rem, 5vw, 3rem);
+        text-shadow: black 0 0 1rem;
+        line-height: 1.1;
+        padding: 0 0.5rem;
+    }
 }
