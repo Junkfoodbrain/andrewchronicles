@@ -7,7 +7,7 @@
 
 nav {
     background-color: var(--primary-color);
-    padding: 10px;    
+    padding: 10px;
 }
 
 a {
@@ -21,7 +21,7 @@ a {
 
 nav ul {
     list-style: none;
-    text-decoration: none;    
+    text-decoration: none;
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -37,17 +37,23 @@ header {
 
 .logo {
     position: absolute;
-    top:20px;
+    top: 20px;
     left: 45px;
     width: 130px;
     height: auto;
 }
 
 .andrew {
-    width: 300px;
+    width: 400px;
     height: auto;
+    padding-top: 1rem;
 }
 
+.book {
+    width: 400px;
+    height: auto;
+
+}
 .hero {
     position: relative;
     width: 100%;
@@ -95,7 +101,30 @@ p {
     font-family: roboto;
 }
 
+.content-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem 2rem;
+}
+
+.content-row>section,
+.content-row>div {
+    flex: 1;
+}
+
+.content-row img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 480px) {
+    .content-row {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
     h1 {
         font-size: clamp(1.6rem, 5vw, 3rem);
         text-shadow: black 0 0 1rem;
