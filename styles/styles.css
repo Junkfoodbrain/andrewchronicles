@@ -8,7 +8,8 @@
 nav {
     background-color: var(--primary-color);
     padding: 10px;
-    position: relative;     /* this is the anchor for logo */
+    position: relative;
+    /* this is the anchor for logo */
 }
 
 a {
@@ -25,8 +26,27 @@ nav ul {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    width: 100%;      
+    gap: 2rem;
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border: 2px solid var(--accent-color);
+}
+
+.nav-toggle .bar {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.nav-toggle .bar+.bar {
+    margin-top: 0.3rem;
 }
 
 header {
@@ -39,7 +59,7 @@ header {
 .logo {
     position: absolute;
     top: -10%;
-    left: 45px;
+    left: 10px;
     transform: translateY(-50%);
     width: 150px;
     height: auto;
@@ -80,14 +100,14 @@ button {
 
 .hero {
     position: relative;
-    width: 100%;    
-    margin: 0;     
+    width: 100%;
+    margin: 0;
 }
 
 .wall {
     display: block;
     width: 100%;
-    height: auto;    
+    height: auto;
 }
 
 .hero-title {
@@ -151,10 +171,55 @@ p {
     height: auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        width: 90px;
+        margin-right: auto;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem 0 0;
+    }
+
+    nav.nav-open ul {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 1.35rem;
+    }
+
     .content-row {
         flex-direction: column;
+        align-items: stretch;
         padding: 1rem;
+    }
+
+    .content-row>section,
+    .content-row>div {
+        flex: 0 0 100%;
+        width: 100%;
     }
 
     h1 {

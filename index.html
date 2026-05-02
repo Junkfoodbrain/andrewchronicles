@@ -18,13 +18,19 @@
 <body>
     <header class="hero">
         <img src="images/wall.webp" class="wall" alt="texture of the nav wall">
-        
+
         <h1 class="hero-title">The Andrew Chronicles</h1>
     </header>
     <main>
         <nav>
             <img src="images/logo_trans.webp" class="logo" alt="Guiding Lantern Press logo">
-            <ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="site-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul id="site-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#chronology">Chronology</a></li>
                 <li><a href="#research">Research</a></li>
@@ -36,7 +42,7 @@
             <p>THIS WEBSITE IS UNDER CONSTRUCTION - PLEASE CHECK BACK SOON FOR UPDATES!</p>
         </fieldset>
         <h2>THE TRUE STORY OF ANDREW LARSON'S PLUNGE INTO THE ABYSS
-            OF THE IDAHO CORRECTIONAL SYSTEM</h2>        
+            OF THE IDAHO CORRECTIONAL SYSTEM</h2>
         <div class="content-row">
             <section class="book-info">
                 <p><strong>RELEASE DATE:</strong> April 25, 2026</p>
@@ -47,7 +53,7 @@
                 <img src="images/andrew_smiles.jpg" class="andrew" alt="A photo of Andrew">
             </section>
             <div>
-                <img src="images/cover4.jpg" class = "book" alt="The cover of the book, The Light In a Dark Corner">
+                <img src="images/cover4.jpg" class="book" alt="The cover of the book, The Light In a Dark Corner">
                 <button class="open">Click to Open</button>
             </div>
 
@@ -75,11 +81,12 @@
             </div>
         </div>
         <fieldset class="action">
-            <p class="call-to-action">Pre-order your copy of The Light in a Dark Corner today and be part of Andrew's fight for
+            <p class="call-to-action">Pre-order your copy of The Light in a Dark Corner today and be part of Andrew's
+                fight for
                 justice!</p>
             <button class="preorder">Pre-Order Now</button>
         </fieldset>
-        
+
     </main>
     <footer>
         <p>&copy; 2026 Andrew Chronicles. All rights reserved.</p>
