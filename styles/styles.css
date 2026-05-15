@@ -50,7 +50,7 @@ nav ul {
 }
 
 header {
-    text-align: center;    
+    text-align: center;
     border-bottom: var(--accent-color) solid 0.5rem;
     font-family: var(--font-family);
     width: 100%;
