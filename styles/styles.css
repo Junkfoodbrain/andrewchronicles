@@ -56,6 +56,8 @@ header {
     width: 100%;
 }
 
+
+
 .logo {
     position: absolute;
     top: -10%;
@@ -228,4 +230,10 @@ p {
         line-height: 1.1;
         padding: 0 0.5rem;
     }
+}
+
+footer {
+    background-color: #eeee;
+    border-top: 2px solid black;
+    padding: 1rem;
 }
