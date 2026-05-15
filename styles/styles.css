@@ -102,14 +102,14 @@ button {
 
 .hero {
     position: relative;
-    width: 100%;    
+    width: 100%;
     margin: 0;
 }
 
 .wall {
     display: block;
     width: 100%;
-    height: auto;    
+    height: auto;
 }
 
 .hero-title {
