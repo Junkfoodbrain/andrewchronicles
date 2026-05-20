@@ -29,3 +29,17 @@ document.querySelectorAll("nav").forEach((nav) => {
         }
     });
 });
+
+
+// adding book cover flip functionality here
+
+const bookButton = document.querySelector(".book-button");
+
+
+if (bookButton) {
+    bookButton.addEventListener("click", () => {
+        const isOpening = !bookButton.classList.contains("is-open");
+        bookButton.classList.toggle("is-open", isOpening);
+        bookButton.setAttribute("aria-pressed", String(isOpening));
+    });
+}
