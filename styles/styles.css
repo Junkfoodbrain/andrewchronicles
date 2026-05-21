@@ -5,6 +5,7 @@
     --accent-color: #f0ca7a;
 }
 
+
 nav {
     background-color: var(--primary-color);
     padding: 10px;
@@ -28,6 +29,10 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     width: 100%;
+}
+
+li a:hover {
+    text-shadow: black 0 0 0.5rem;
 }
 
 .nav-toggle {
