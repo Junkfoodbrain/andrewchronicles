@@ -32,7 +32,7 @@ nav ul {
 }
 
 li a:hover {
-    text-shadow: black 0 0 0.5rem;
+    text-shadow: 0 0 0.5rem black;    
 }
 
 .nav-toggle {
