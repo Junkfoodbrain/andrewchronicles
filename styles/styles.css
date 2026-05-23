@@ -32,7 +32,10 @@ nav ul {
 }
 
 li a:hover {
-    text-shadow: 0 0 0.5rem black;    
+    text-shadow: 0 0 0.5rem black; 
+    /* background-color: black;
+    color: whitesmoke; */
+
 }
 
 .nav-toggle {
