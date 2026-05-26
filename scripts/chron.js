@@ -72,7 +72,7 @@ if (preorderForm) {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
             });
-            
+
             if (!response.ok) {
                 throw new Error(`Request failed with status ${response.status}`);
             }
@@ -80,13 +80,13 @@ if (preorderForm) {
             if (status) {
                 status.textContent = "Pre-order saved successfully.";
             }
-            preorderForm.reset();       
+            preorderForm.reset();
         } catch (error) {
             if (status) {
                 status.textContent = "Could not save pre-order. Make sure Python is running.";
             }
             console.error("Pre-order submission failed.", error);
-        }        
-       
+        }
+
     });
 }
