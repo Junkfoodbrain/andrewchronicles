@@ -246,6 +246,7 @@ p {
 
 .card-cover {
     align-items: center;
+    justify-content: center;
 }
 
 .card-cover .book-button {
@@ -259,7 +260,7 @@ p {
 
 .content-row img {
     max-width: 100%;
-    height: auto;
+    height: auto;    
 }
 
 
