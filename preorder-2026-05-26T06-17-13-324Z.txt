@@ -1,8 +1,0 @@
-Andrew Chronicles Pre-Order
----------------------------
-Submitted: 2026-05-26T06:17:13.324Z
-First Name: null
-Last Name: Sorensen
-Email: null
-Quantity: 1
-Shipping Address: 123 Any Street, Anytown, CA 95678
