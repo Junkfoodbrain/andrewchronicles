@@ -60,7 +60,7 @@ if (preorderForm) {
             status.textContent = "Submitting pre-order...";
         }
         const payload = {
-            firstsName: String(formData.get("firstName") || "").trim(),
+            firstName: String(formData.get("firstName") || "").trim(),
             lastName: String(formData.get("lastName") || "").trim(),
             email: String(formData.get("email") || "").trim(),
             quantity: String(formData.get("quantity") || "").trim(),
@@ -78,9 +78,9 @@ if (preorderForm) {
             }
 
             if (status) {
-                satus.textContent = "Pre-order saved successfully.";
+                status.textContent = "Pre-order saved successfully.";
             }
-            preorderForm.requestFullscreen();       
+            preorderForm.reset();       
         } catch (error) {
             if (status) {
                 status.textContent = "Could not save pre-order. Make sure Python is running.";
