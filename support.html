@@ -20,35 +20,64 @@
         <img src="images/wall.webp" class="wall" alt="texture of the nav wall">
         <h1 class="hero-title">The Andrew Chronicles</h1>
     </header>
-    <main>
-        <nav>
-            <img src="images/logo_trans.webp" class="logo" alt="Guiding Lantern Press logo">
-            <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
-                aria-controls="site-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul id="site-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="chronology.html">Chronology</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="about.html">About Us!</a></li>
-            </ul>
-        </nav>
-        <p>Support The Andrew Chronicles and help us share Andrew's story with the world!</p>
-        <p>Your support will help us raise awareness about the injustices in the Idaho correctional system and
-            contribute to Andrew's legal fight for justice and freedom.</p>
-        <h2>How You Can Help:</h2>
-        <ul>
-            <li>Donate to support Andrew's legal fund.</li>
-            <li>Share Andrew's story on social media to raise awareness.</li>
-            <li>Volunteer your time or skills to help with advocacy efforts.</li>
-            <li>Attend events or fundraisers to show your support.</li>
+    <nav>
+        <img src="images/logo_trans.webp" class="logo" alt="Guiding Lantern Press logo">
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="site-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul id="site-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chronology.html">Chronology</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about.html">About Us!</a></li>
         </ul>
+    </nav>
+    <main class="support-main">
+        <h2 class="support-title">Help Us Share Andrew's Story With The World</h2>
+
+        <p class="support-description">Your support will help us raise awareness about the injustices in the Idaho
+            correctional system and
+            contribute to Andrew's legal fight for justice ...and FREEDOM.</p>
+        <section class="levels" aria-label="Support opportunities">
+
+            <article class="support">
+                <h3>Donate to Legal Fund</h3>
+                <button type="button" class="open-btn" data-dialog="donate-modal">Learn More</button>
+            </article>
+
+            <article class="support">
+                <h3>Share to Social Media</h3>
+                <button type="button" class="open-btn" data-dialog="share-modal">Learn More</button>
+            </article>
+
+            <article class="support">
+                <h3>Volunteer Your Skills</h3>
+                <button type="button" class="open-btn" data-dialog="volunteer-modal">Learn More</button>
+            </article>
+
+            <article class="support">
+                <h3>Upcoming Events</h3>
+                <button type="button" class="open-btn" data-dialog="events-modal">Learn More</button>
+            </article>
+        </section>
+
+        <dialog id="donate-modal">
+            <h2>Donate to Legal Fund</h2>
+            <p>If you are interested in donating to our mission, please reach out to us at <a
+                    href="mailto:donate@guidinglantern.com">
+                    <guidinglantern class="com"></guidinglantern>
+                </a>.</p>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
     </main>
     <footer>
+        <nav class="social" aria-label="Social Media Links">
+            <a href="https://www.facebook.com" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="Facebook"></a>
+        </nav>
         <p>&copy; 2026 Andrew Chronicles. All rights reserved.</p>
     </footer>
 </body>
