@@ -97,7 +97,7 @@ header {
 .book-frame {
     position: relative;
     display: inline-block;
-    width: min(340px, 100%);
+    width: clamp(260px, 30vs, 420px);
     overflow: hidden;
     transform-style: preserve-3d;
     transform-origin: left center;
@@ -230,7 +230,7 @@ p {
     background: #f8f4ea;
     border: 2px solid #c8b98f;
     border-radius: 10px;
-    padding: 1rem;
+    padding: .75rem;
     display: flex;
     flex-direction: column;
     gap: 0.55rem;
@@ -243,6 +243,7 @@ p {
 }
 
 .card-cover {
+    display: flex;
     align-items: center;
     justify-content: center;
 }

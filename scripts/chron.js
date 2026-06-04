@@ -64,7 +64,7 @@ if (preorderForm) {
             lastName: String(formData.get("lastName") || "").trim(),
             email: String(formData.get("email") || "").trim(),
             quantity: String(formData.get("quantity") || "").trim(),
-            address: String(formData.get("address") || "").trim(),
+            address: String(formData.get("shipping") || "").trim(),
         };
         try {
             const response = await fetch("http://127.0.0.1:5000/api/preorder", {
