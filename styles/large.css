@@ -76,7 +76,7 @@ header {
     top: -10%;
     left: 10px;
     transform: translateY(-50%);
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
@@ -161,8 +161,9 @@ button {
     font-weight: 600;
     color: var(--accent-color);
     background-color: var(--primary-color);
-    border: none;
+    border: 2px solid #111;
     border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
 
@@ -594,9 +595,6 @@ h3,
 
 .open-btn {
     margin-top: 0.8rem;
-    background: #f7f3e9;
-    color: var(--primary-color);
-    border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 6px;
     padding: 0.45rem 1rem;
     font-size: 1.2rem;
@@ -604,8 +602,7 @@ h3,
 
 .open-btn:hover,
 .open-btn:focus-visible {
-    background: var(--accent-color);
-    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes supportFadeIn {
@@ -632,5 +629,5 @@ footer {
     background-color: var(--primary-color);
     border-top: 2px solid black;
     padding: 1rem;
-    color: var(--accent-color);
+    color: black;
 }
