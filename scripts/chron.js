@@ -102,6 +102,8 @@ function convertOrdersToCsv(orders) {
     return [headers.join(","), ...rows].join("\n");
 }
 
+// --storing orders to a csv file for export, not a real database but will be updated later---
+
 function downloadCsv(filename, csvContent) {
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
     const url = URL.createObjectURL(blob);
@@ -161,7 +163,11 @@ if (exportOrdersButton) {
     exportOrdersButton.addEventListener("click", () => {
         const orders = getStoredOrders();
         if (!orders.length) {
-            alert("No saved orders were found in this browser yet.");
+            alert(
+                "No saved orders were found for this site context.\n\n" +
+                `Current origin: ${window.location.origin || "file://"}\n\n` +
+                "Make sure you submitted test orders from order.html in the same browser/profile and same URL (same origin/port)."
+            );
             return;
         }
         const dateStamp = new Date().toISOString().slice(0, 10);

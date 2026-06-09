@@ -159,7 +159,7 @@ button {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--accent-color);
+    color: whitesmoke;
     background-color: var(--primary-color);
     border: 2px solid #111;
     border-radius: 5px;
@@ -343,6 +343,8 @@ h3,
     white-space: nowrap;
 }
 
+/* ---order page and support page styles--- */
+
 .order-main {
     padding: 1.25rem 1rem 2rem;
 }
@@ -390,6 +392,7 @@ h3,
     color: var(--primary-color);
 }
 
+/* --orders Admin Tools page styles --- */
 .order-tools {
     margin-top: 0.9rem;
     padding: 0.75rem;
@@ -410,6 +413,13 @@ h3,
     font-size: 1rem;
     padding: 0.5rem 0.85rem;
 }
+
+.order-panel {
+    background: var(--primary-color);
+}
+/* -----end Admin Tools page styles---- */
+
+
 
 
 .preorder-fieldset {
@@ -541,7 +551,7 @@ h3,
 }
 
 .levels {
-    background: var(--surface-bg);
+    background: black;
     border: 1px solid var(--surface-border);
     border-radius: var(--radius-lg);
     box-shadow: var(--surface-shadow);
