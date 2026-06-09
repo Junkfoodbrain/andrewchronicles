@@ -14,8 +14,12 @@
 nav {
     background-color: var(--primary-color);
     padding: 10px;
-    position: relative;
+    position: relative;    
     /* this is the anchor for logo */
+}
+
+.main-nav {
+    border-bottom: .5em solid black;
 }
 
 a {
@@ -396,7 +400,7 @@ h3,
 .order-tools {
     margin-top: 0.9rem;
     padding: 0.75rem;
-    border: 1px dashed #b8ad93;
+    border: 1px dashed black;
     border-radius: 8px;
     background: #faf7ef;
 }
@@ -416,6 +420,7 @@ h3,
 
 .order-panel {
     background: var(--primary-color);
+    border: .5em solid black;
 }
 /* -----end Admin Tools page styles---- */
 
