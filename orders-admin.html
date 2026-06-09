@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Andrew Chronicles</title>
-    <meta name="description"
-        content="The Light In a Dark Corner - Andrew's legal fight for justice and freedom, through the eyes of his grandmother">
+    <title>Orders Admin - The Andrew Chronicles</title>
+    <meta name="description" content="Internal tools for exporting and clearing locally stored pre-order data.">
     <meta name="author" content="Leah Sorensen">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +13,12 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/chron.js" defer></script>
-
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="hero">
         <img src="images/wall.webp" class="wall" alt="texture of the nav wall">
-
         <h1 class="hero-title">The Andrew Chronicles</h1>
     </header>
 
@@ -34,20 +31,25 @@
             <span class="bar"></span>
         </button>
         <ul id="site-menu">
-            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="chronology.html">Chronology</a></li>
             <li><a href="support.html">Support</a></li>
             <li><a href="about.html">About Us!</a></li>
-
         </ul>
     </nav>
 
-    <main>
-
-        <h2>THANK YOU FOR PRE-ORDERING THE ANDREW CHRONICLES!</h2>
-        <p>Your support means the world to us and will help support our mission to bring Andrew home.</p>
-
+    <main class="order-main">
+        <h3 class="order-title">Orders Admin Tools</h3>
+        <div class="order-panel" style="max-width: 860px; margin: 0 auto;">
+            <div class="order-tools" aria-label="Order data tools">
+                <p class="order-tools-note">Use these internal tools to download saved pre-orders from this browser as
+                    CSV, then follow up with customers by email for payment and shipping.</p>
+                <button type="button" id="export-orders" class="order-tool-btn">Download Orders CSV</button>
+                <button type="button" id="clear-orders" class="order-tool-btn">Clear Saved Orders</button>
+            </div>
+        </div>
     </main>
+
     <footer>
         <nav class="social" aria-label="Social Media Links">
             <a href="https://www.facebook.com" aria-label="Facebook">

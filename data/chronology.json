@@ -1,0 +1,21 @@
+
+----this works by adding entries into json file as objects with "date" and "details" properties. 
+The javascript then reads the json file and creates table rows for each entry. 
+The date is formatted as a string, and the details are also a string that can contain any information about the event.
+The table is then updated with the new entries.----- 
+
+
+[
+    {
+        "date": "5/8/2026",
+        "details": "The prosecution responded by getting a 30-day extension. This pushes the response date to about June 5th, and Andrew remains in jail another 30 days."
+    },
+    {
+        "date": "4/8/2026",
+        "details": "The original brief for the appeal was filed. The prosecution has 28 days to respond, and an additional postponement may push the response into early June."
+    },
+    {
+        "date": "3/19/2026",
+        "details": "The hearing was held without Andrew's attorney present. Andrew's papers and belongings were returned in a box, and some items were damaged."
+    }
+]

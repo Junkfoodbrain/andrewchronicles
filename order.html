@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Imprint+MT+Shadow&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/chron.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -39,12 +40,16 @@
         </ul>
     </nav>
     <main class="order-main">
-        <h2 class="order-title">Pre-Order The Andrew Chronicles</h2>
-        <p class="order-intro">Reserve your copy now and be among the first to receive The Light In a Dark Corner.</p>
+        <h3 class="order-title">The Light In a Dark Corner</h3>
+        <p class="order-intro">Reserve your copy now and be among the first to receive </p>
+        <div class="subtitle">
+            <h4><strong>The Andrew Chronicles: Part 1</strong></h4>
+        </div>
+
 
         <div class="order-layout">
             <section class="order-panel">
-                <form method="get" action="thankyou.html" class="preorder-form"
+                <form method="get" action="thankyou.html" id="preorder-form" class="preorder-form"
                     aria-label="Pre-order form for The Andrew Chronicles">
                     <fieldset class="preorder-fieldset">
                         <legend>Pre-Order Form</legend>
@@ -73,6 +78,7 @@
                             placeholder="Anything you'd like us to know about your order?"></textarea>
 
                         <button type="submit" class="order-submit">Pre-Order Now</button>
+                        <p id="preorder-message" aria-live="polite"></p>
                     </fieldset>
                 </form>
             </section>

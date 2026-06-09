@@ -1,7 +1,13 @@
 :root {
-    --font-family: 'Imprint MT Shadow', 'Roboto', 'Algerian' sans-serif;
+    --font-family: 'Imprint MT Shadow', 'Roboto', 'Algerian', sans-serif;
+    --heading-font: 'Imprint MT Shadow', serif;
+    --body-font: 'Roboto', sans-serif;
     --primary-color: #685B34;
     --accent-color: #f0ca7a;
+    --surface-bg: #eceae5;
+    --surface-border: #d2cfc6;
+    --surface-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+    --radius-lg: 12px;
 }
 
 
@@ -97,7 +103,7 @@ header {
 .book-frame {
     position: relative;
     display: inline-block;
-    width: clamp(260px, 30vs, 420px);
+    width: clamp(260px, 30vw, 420px);
     overflow: hidden;
     transform-style: preserve-3d;
     transform-origin: left center;
@@ -203,19 +209,31 @@ h1 {
 h2 {
     font-size: 1.5rem;
     font-weight: 600;
+    color: var(--primary-color);
     text-align: center;
-    font-family: 'Imprint Mt Shadow';
 }
 
 h3 {
-    font-family: 'Imprint MT Shadow';
     font-size: 2rem;
     font-weight: 400;
     color: var(--primary-color);
 }
 
 p {
-    font-family: roboto;
+    font-family: var(--body-font);
+}
+
+h2,
+h3,
+.preorder-fieldset legend,
+.featured-quote blockquote {
+    font-family: var(--heading-font);
+}
+
+.preorder-fieldset label,
+.preorder-fieldset input,
+.preorder-fieldset textarea {
+    font-family: var(--body-font);
 }
 
 .content-row {
@@ -257,6 +275,7 @@ p {
     line-height: 1.55;
 }
 
+
 .content-row img {
     max-width: 100%;
     height: auto;
@@ -265,6 +284,62 @@ p {
 .about-content {
     display: block;
     padding: 2rem;
+}
+
+.chronology-main {
+    padding: 1.25rem 1rem 2rem;
+}
+
+.chronology-title {
+    margin: 0.4rem auto 0.9rem;
+    max-width: 32ch;
+    text-align: center;
+}
+
+.chronology-table-wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    max-height: 30rem;
+    overflow-y: auto;
+    background: #f8f4ea;
+    border: 1px solid #d0c4a8;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.chronology-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.chronology-table .col-date {
+    width: 12.5rem;
+}
+
+.chronology-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--primary-color);
+    color: #fff7e4;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.chronology-table th,
+.chronology-table td {
+    padding: 0.8rem 0.9rem;
+    border-bottom: 1px solid rgba(104, 91, 52, 0.25);
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.chronology-table .date-col {
+    font-weight: 700;
+    color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .order-main {
@@ -281,6 +356,8 @@ p {
     margin: 0 auto 1.2rem;
     max-width: 60ch;
     text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
     line-height: 1.5;
 }
 
@@ -294,16 +371,45 @@ p {
 }
 
 .order-panel {
-    background: #eceae5;
-    border: 1px solid #d2cfc6;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+    background: var(--surface-bg);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--surface-shadow);
     padding: 1rem;
 }
 
 .preorder-form {
     width: 100%;
 }
+
+#preorder-message {
+    margin: 0.5rem 0 0;
+    min-height: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.order-tools {
+    margin-top: 0.9rem;
+    padding: 0.75rem;
+    border: 1px dashed #b8ad93;
+    border-radius: 8px;
+    background: #faf7ef;
+}
+
+.order-tools-note {
+    margin: 0 0 0.6rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.order-tool-btn {
+    display: inline-block;
+    margin: 0.25rem 0.4rem 0.25rem 0;
+    font-size: 1rem;
+    padding: 0.5rem 0.85rem;
+}
+
 
 .preorder-fieldset {
     border: 0;
@@ -314,14 +420,12 @@ p {
 }
 
 .preorder-fieldset legend {
-    font-family: 'Imprint MT Shadow';
     font-size: clamp(1.5rem, 2.6vw, 2.15rem);
     margin-bottom: 0.75rem;
     color: #3f3457;
 }
 
 .preorder-fieldset label {
-    font-family: roboto;
     font-size: 1.55rem;
     font-weight: 600;
     color: #222;
@@ -336,7 +440,6 @@ p {
     border-radius: 8px;
     padding: 0.7rem;
     font-size: 1.5rem;
-    font-family: roboto;
     background: #f7f6f3;
 }
 
@@ -395,7 +498,6 @@ p {
 
 .featured-quote blockquote {
     margin: 0;
-    font-family: 'Imprint MT Shadow';
     font-size: 1.25rem;
     line-height: 1.35;
     color: #3f3457;
@@ -438,10 +540,10 @@ p {
 }
 
 .levels {
-    background: #eceae5;
-    border: 1px solid #d2cfc6;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+    background: var(--surface-bg);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--surface-shadow);
     max-width: 860px;
     margin: 0 auto;
     padding: 1.1rem;
@@ -523,88 +625,6 @@ p {
 
     .featured-quote {
         animation: none;
-    }
-}
-
-
-
-@media (max-width: 900px) {
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 0.75rem;
-        padding: 0.75rem 1rem;
-    }
-
-    .logo {
-        position: static;
-        transform: none;
-        width: 90px;
-        margin-right: auto;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        width: 100%;
-        margin: 0;
-        padding: 0.5rem 0 0;
-    }
-
-    nav.nav-open ul {
-        display: flex;
-    }
-
-    nav a {
-        font-size: 1.35rem;
-    }
-
-    .content-row {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-
-    .order-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .order-aside {
-        order: -1;
-    }
-
-    .preorder-fieldset label,
-    .preorder-fieldset input,
-    .preorder-fieldset textarea,
-    .order-submit {
-        font-size: 1.3rem;
-    }
-
-    .featured-quote blockquote {
-        font-size: 1.12rem;
-    }
-
-    .levels {
-        padding: 0.8rem;
-    }
-
-    .support {
-        border-radius: 10px;
-        padding: 1rem 0.8rem 0.9rem;
-    }
-
-    h1 {
-        font-size: clamp(1.6rem, 5vw, 3rem);
-        text-shadow: black 0 0 1rem;
-        line-height: 1.1;
-        padding: 0 0.5rem;
     }
 }
 

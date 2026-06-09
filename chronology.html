@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Imprint+MT+Shadow&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/chron.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -23,7 +24,7 @@
 
         <h1 class="hero-title">The Andrew Chronicles</h1>
     </header>
-    <main>
+    <main class="chronology-main">
         <nav>
             <img src="images/logo_trans.webp" class="logo" alt="Guiding Lantern Press logo">
             <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
@@ -39,20 +40,37 @@
                 <li><a href="about.html">About Us!</a></li>
             </ul>
         </nav>
-        <h3>Chronological Timeline of Events</h3>
-        <div>
-            <p><strong>5/8/26:</strong> The Prosecution responded today by getting a 30-day extension. That will push
-                out the
-                response date to about June 5th. Andrew will spend another 30 days in jail for no reason.</p>
-            <p><strong>4/8/2026:</strong> The Original Brief for the Appeal was filed today. The Prosectution
-                has 28 days to respond. However, it is expected that they will "continue" (postpone) the case for
-                another 28 days. In theory,
-                they should respond by May 6th. If hey postpone for another 30 days, it would be June 5th, I think.</p>
-            <p><strong>3/19/2026:</strong> the hearing was not reset and it was held without Andrew's attorney being
-                present. The result was that
-                none of Andrew's papers or belongings were not okay for him to have. They were returned in a box
-                (although some were damaged).</p>
-
+        <h3 class="chronology-title">Chronological Timeline of Events</h3>
+        <div class="chronology-table-wrap" role="region" aria-label="Chronological timeline table" tabindex="0">
+            <table class="chronology-table">
+                <colgroup>
+                    <col class="col-date">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Details</th>
+                    </tr>
+                </thead>
+                <tbody id="chronology-body">
+                    <tr>
+                        <td class="date-col">5/8/2026</td>
+                        <td>The prosecution responded by getting a 30-day extension. This pushes the response date to
+                            about June 5th, and Andrew remains in jail another 30 days.</td>
+                    </tr>
+                    <tr>
+                        <td class="date-col">4/8/2026</td>
+                        <td>The original brief for the appeal was filed. The prosecution has 28 days to respond, and an
+                            additional postponement may push the response into early June.</td>
+                    </tr>
+                    <tr>
+                        <td class="date-col">3/19/2026</td>
+                        <td>The hearing was held without Andrew's attorney present. Andrew's papers and belongings were
+                            returned in a box, and some items were damaged.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
 
