@@ -1,8 +1,5 @@
 
-----this works by adding entries into json file as objects with "date" and "details" properties. 
-The javascript then reads the json file and creates table rows for each entry. 
-The date is formatted as a string, and the details are also a string that can contain any information about the event.
-The table is then updated with the new entries.----- 
+
 
 
 [
