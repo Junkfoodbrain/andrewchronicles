@@ -642,7 +642,32 @@ h3,
 
 footer {
     background-color: var(--primary-color);
-    border-top: 2px solid black;
+    border-top: 0.5em solid black;
     padding: 1rem;
     color: black;
+}
+
+footer p {
+    color: whitesmoke;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.8rem;
+}
+/* 
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--text-light);
+    border-radius: 0.4rem;
+} */
+.social img {
+    width: 20px;
+    height: 20px;
 }
