@@ -488,6 +488,10 @@ h3,
     border-radius: 8px;
 }
 
+.thankyou-main {
+    text-align: center;
+}
+
 .order-aside {
     background: #f8f4ea;
     border: 1px solid #d0c4a8;
@@ -629,6 +633,10 @@ h3,
 .open-btn:hover,
 .open-btn:focus-visible {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.support-main dialog a {
+    color: var(--primary-color);
 }
 
 @keyframes supportFadeIn {
