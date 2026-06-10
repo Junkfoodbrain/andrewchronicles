@@ -236,3 +236,9 @@ async function loadChronologyFromJson() {
 }
 
 loadChronologyFromJson();
+
+// ----Last modified script for footer -----
+const today = new Date();
+today.getFullYear();
+
+document.getElementById('lastModified').innerHTML = document.lastModified;
