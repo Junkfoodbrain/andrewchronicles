@@ -438,13 +438,13 @@ h3,
 .preorder-fieldset legend {
     font-size: clamp(1.5rem, 2.6vw, 2.15rem);
     margin-bottom: 0.75rem;
-    color: #3f3457;
+    color: var(--surface-bg);
 }
 
 .preorder-fieldset label {
     font-size: 1.55rem;
     font-weight: 600;
-    color: #222;
+    color: var(--surface-bg);
     margin-top: 0.4rem;
 }
 
@@ -643,31 +643,36 @@ h3,
 footer {
     background-color: var(--primary-color);
     border-top: 0.5em solid black;
-    padding: 1rem;
-    color: black;
-}
-
-footer p {
+    padding: 1rem 10px;
+    text-align: center;
     color: whitesmoke;
 }
 
 .social {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.social a {
     display: flex;
     justify-content: center;
-    gap: 0.75rem;
-    margin-bottom: 0.8rem;
-}
-/* 
-.social a {
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
     width: 44px;
     height: 44px;
-    border: 1px solid var(--text-light);
-    border-radius: 0.4rem;
-} */
-.social img {
-    width: 20px;
-    height: 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
 }
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+.social a:hover {
+    background-color: #3f3720;
+}
+
+
+
