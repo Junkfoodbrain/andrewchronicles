@@ -171,7 +171,7 @@ button {
     cursor: pointer;
 }
 
-
+/* ---title and hero section --- */
 .hero {
     position: relative;
     width: 100%;
@@ -185,8 +185,6 @@ button {
 /* ---(above)changed the background img to responsive css background
 which prevents distortion and passes lighthouse best practices--- */
 
-
-/* ----this is the section where the title is---- */
 .wall {
     display: none;
 }
