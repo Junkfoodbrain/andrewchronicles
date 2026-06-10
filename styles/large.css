@@ -14,7 +14,7 @@
 nav {
     background-color: var(--primary-color);
     padding: 10px;
-    position: relative;    
+    position: relative;
     /* this is the anchor for logo */
 }
 
@@ -422,6 +422,7 @@ h3,
     background: var(--primary-color);
     border: .5em solid black;
 }
+
 /* -----end Admin Tools page styles---- */
 
 
@@ -649,7 +650,7 @@ footer {
 }
 
 .social {
-    display: flex;   
+    display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 15px;
@@ -673,6 +674,3 @@ footer {
 .social a:hover {
     background-color: #3f3720;
 }
-
-
-
